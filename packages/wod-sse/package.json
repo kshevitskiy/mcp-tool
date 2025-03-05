@@ -1,0 +1,24 @@
+{
+  "name": "@slvrio/wod-sse",
+  "version": "0.0.1",
+  "description": "Fetch Crossfit WOD mcp server SSE",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "npx --yes listhen ./dist/src/index.js",
+    "serve": "PORT=3001 npx --yes listhen -w ./src/index.ts",
+    "inspector": "npx @modelcontextprotocol/inspector"
+  },
+  "keywords": [
+    "modelcontextprotocol",
+    "sse",
+    "llm",
+    "ai"
+  ],
+  "author": "Yevhenii Kshevitskyi",
+  "license": "MIT",
+  "dependencies": {
+    "@slvrio/shared": "workspace:^",
+    "h3": "^1.15.1"
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "name": "@slvrio/wod",
+  "version": "0.0.5",
+  "description": "Fetch Crossfit WOD",
+  "type": "module",
+  "types": "./dist/index.d.cts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.cts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    },
+    "./package.json": "./package.json"
+  },
+  "scripts": {
+    "build": "tsup src",
+    "dev": "tsup --watch",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "inspector": "npx @modelcontextprotocol/inspector npx ."
+  },
+  "keywords": [
+    "modelcontextprotocol",
+    "llm",
+    "ai",
+    "stdio"
+  ],
+  "author": "Yevhenii Kshevitskyi",
+  "license": "MIT",
+  "tsup": {
+    "dts": true,
+    "bundle": true,
+    "treeshake": true,
+    "target": "node18",
+    "format": [
+      "cjs",
+      "esm"
+    ],
+    "entry": [
+      "src/**/*.ts"
+    ]
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "bin": "./dist/bin.cjs"
+}
