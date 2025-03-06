@@ -1,4 +1,5 @@
 {
+  "private": true,
   "name": "@slvrio/wod-sse",
   "version": "0.0.1",
   "description": "Fetch Crossfit WOD mcp server SSE",
