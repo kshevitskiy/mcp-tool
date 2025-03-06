@@ -1,5 +1,11 @@
 # @slvrio/wod
 
+## 0.0.6
+
+### Patch Changes
+
+- Amend documentation, setup section
+
 ## 0.0.5
 
 ### Patch Changes

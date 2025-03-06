@@ -16,11 +16,13 @@ Stay on top of your training with WOD Tool — a simple CLI utility that fetches
 1. Open **Cursor IDE** settings
 2. Navigate to `MCP` tab
 3. Click on `Add new MCP server`
-4. Provide server **name** and select **type** `command`
-5. In **command** field enter
-   ```sh
-   npx -y @slvrio/wod
-   ```
+4. Fill in the fields:
+
+   - **Name:** Any name
+   - **Type:** `command`
+   - **Command:** `npx -y @slvrio/wod`
+
+5. Click **Save**
 
 ## Usage
 

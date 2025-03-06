@@ -1,6 +1,6 @@
 {
   "name": "@slvrio/wod",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "Fetch Crossfit WOD",
   "type": "module",
   "types": "./dist/index.d.cts",
