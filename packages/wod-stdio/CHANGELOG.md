@@ -1,5 +1,11 @@
 # @slvrio/wod
 
+## 0.0.7
+
+### Patch Changes
+
+- Filter package files list
+
 ## 0.0.6
 
 ### Patch Changes

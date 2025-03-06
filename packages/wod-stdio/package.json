@@ -1,6 +1,6 @@
 {
   "name": "@slvrio/wod",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "Fetch Crossfit WOD",
   "type": "module",
   "types": "./dist/index.d.cts",
@@ -12,6 +12,11 @@
     },
     "./package.json": "./package.json"
   },
+  "files": [
+    "dist",
+    "CHANGELOG.md",
+    "README.md"
+  ],
   "scripts": {
     "build": "tsup src",
     "dev": "tsup --watch",
