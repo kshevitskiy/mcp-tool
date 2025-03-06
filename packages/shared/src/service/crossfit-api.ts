@@ -53,6 +53,12 @@ export interface FeaturedDTO {
   isThumbnail: boolean
 }
 
+export interface GetWodProps {
+  year: string
+  month: string
+  day: string
+}
+
 export const client = axios.create({
   baseURL: 'https://www.crossfit.com',
   headers: {
@@ -60,14 +66,12 @@ export const client = axios.create({
   },
 })
 
-export function getWod({
-  year,
-  month,
-  day,
-}: {
-  year: string
-  month: string
-  day: string
-}) {
+export function getWodURL({ year, month, day }: GetWodProps) {
+  return client.getUri({
+    url: `/workout/${year}/${month}/${day}`,
+  })
+}
+
+export function getWod({ year, month, day }: GetWodProps) {
   return client.get<{ wods: WodsDTO }>(`/workout/${year}/${month}/${day}`)
 }

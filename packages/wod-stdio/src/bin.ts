@@ -17,23 +17,39 @@ function createWodTool() {
   function register(server: McpServer) {
     server.tool(name, description, async () => {
       const date = parseDate('') // today
-      const { data } = await CrossfitApi.getWod(date)
-      const { title, wodRaw } = data.wods
 
-      const textContent = `
-  # ${title}
-  
-  ${wodRaw}
-      `
+      try {
+        const { data } = await CrossfitApi.getWod(date)
+        const { title, wodRaw } = data.wods
+        const textContent = `# ${title}\n\n${wodRaw}`
 
-      return {
-        content: [
-          {
-            type: 'text',
-            mimeType: 'text/markdown',
-            text: textContent,
-          },
-        ],
+        return {
+          content: [
+            {
+              type: 'text',
+              mimeType: 'text/markdown',
+              text: textContent,
+            },
+          ],
+        }
+      } catch (exception: any) {
+        const notFound = `# Sorry, I couldn't fetch the WOD. Please visit [CrossFit.com](${CrossfitApi.getWodURL(
+          date
+        )}) to view today's workout.`
+
+        return {
+          isError: true,
+          content: [
+            {
+              type: 'text',
+              mimeType: 'text/markdown',
+              text:
+                exception.response.status === 404
+                  ? notFound
+                  : exception?.message,
+            },
+          ],
+        }
       }
     })
   }
