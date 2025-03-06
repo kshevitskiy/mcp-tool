@@ -1,5 +1,11 @@
 # @slvrio/wod
 
+## 0.0.9
+
+### Patch Changes
+
+- Handled missing WODs gracefully with 404 fallback — no more empty responses!
+
 ## 0.0.8
 
 ### Patch Changes
