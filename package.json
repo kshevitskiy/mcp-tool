@@ -7,7 +7,7 @@
   "scripts": {
     "build": "pnpm recursive run build",
     "test": "pnpm recursive run test",
-    "ci:publish": "pnpm publish -r"
+    "ci:publish": "changeset publish"
   },
   "homepage": "",
   "repository": {
