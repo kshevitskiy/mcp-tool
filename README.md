@@ -1,3 +1,5 @@
+![wod-tool-stdio-demo](public/wod-tool.gif?raw=true 'wod-stdio')
+
 # Model-Context-Protocol Tools Collection
 
 **MCP Tools** is a versatile monorepo providing utilities designed to work with the [**Model-Context-Protocol (MCP)**](https://modelcontextprotocol.io/introduction) framework. It offers a modular approach to managing event-driven workflows through different communication channels.
