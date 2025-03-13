@@ -46,7 +46,7 @@ importers:
         specifier: ^4.1.0
         version: 4.1.0
 
-  packages/storyblok-stdio:
+  packages/storyblok:
     dependencies:
       '@slvrio/storyblok':
         specifier: ^0.1.0
