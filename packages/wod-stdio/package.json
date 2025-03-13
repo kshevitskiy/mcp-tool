@@ -3,12 +3,12 @@
   "version": "0.0.9",
   "description": "Fetch Crossfit WOD",
   "type": "module",
-  "types": "./dist/index.d.cts",
+  "types": "./dist/bin.d.ts",
   "exports": {
     ".": {
-      "types": "./dist/index.d.cts",
-      "import": "./dist/index.js",
-      "require": "./dist/index.cjs"
+      "types": "./dist/bin.d.ts",
+      "import": "./dist/bin.js",
+      "require": "./dist/bin.cjs"
     },
     "./package.json": "./package.json"
   },
@@ -22,6 +22,10 @@
     "dev": "tsup --watch",
     "test": "echo \"Error: no test specified\" && exit 1",
     "inspector": "npx @modelcontextprotocol/inspector npx ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kshevitskiy/mcp-tool.git"
   },
   "keywords": [
     "modelcontextprotocol",
