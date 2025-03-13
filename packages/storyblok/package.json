@@ -1,0 +1,61 @@
+{
+  "name": "@slvrio/storyblok-mcp-client",
+  "version": "0.0.0",
+  "description": "Storyblok MCP client",
+  "type": "module",
+  "types": "./dist/index.d.cts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.cts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    },
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "dist",
+    "CHANGELOG.md",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "tsup src",
+    "dev": "tsup --watch",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "inspector": "npx @modelcontextprotocol/inspector npx ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kshevitskiy/mcp-tool.git"
+  },
+  "keywords": [
+    "modelcontextprotocol",
+    "llm",
+    "ai",
+    "stdio",
+    "storyblok",
+    "client"
+  ],
+  "author": "Yevhenii Kshevitskyi",
+  "license": "MIT",
+  "tsup": {
+    "dts": true,
+    "bundle": true,
+    "treeshake": true,
+    "target": "node18",
+    "format": [
+      "cjs",
+      "esm"
+    ],
+    "entry": [
+      "src/**/*.ts"
+    ]
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "bin": "./dist/index.cjs",
+  "dependencies": {
+    "@slvrio/storyblok": "^0.1.0",
+    "storyblok-js-client": "^6.10.10"
+  }
+}
