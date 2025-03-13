@@ -1,5 +1,11 @@
 # @slvrio/wod
 
+## 0.0.10
+
+### Patch Changes
+
+- Update import paths and add repository
+
 ## 0.0.9
 
 ### Patch Changes
