@@ -1,5 +1,11 @@
 # @slvrio/wod
 
+## 0.1.0
+
+### Minor Changes
+
+- ✨ Added a date parameter to the get_wod tool, allowing users to retrieve workouts for a specific date instead of only fetching the latest entry.
+
 ## 0.0.10
 
 ### Patch Changes
