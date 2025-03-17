@@ -12,6 +12,7 @@ pids
 logs
 results
 tmp
+__playground__
 
 # Coverage reports
 coverage
