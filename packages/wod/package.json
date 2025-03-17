@@ -51,5 +51,9 @@
   "publishConfig": {
     "access": "public"
   },
-  "bin": "./dist/bin.cjs"
+  "bin": "./dist/bin.cjs",
+  "dependencies": {
+    "axios": "^1.8.1",
+    "date-fns": "^4.1.0"
+  }
 }
