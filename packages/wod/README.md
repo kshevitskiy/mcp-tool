@@ -27,3 +27,7 @@ Stay on top of your training with WOD Tool — a simple CLI utility that fetches
 ## Usage
 
 > In chat (`cmd+i`), type `wod` and run the **wod tool** (`cmd+enter`)
+
+## Preview
+
+![wod-tool-stdio-demo](https://github.com/kshevitskiy/mcp-tool/blob/main/public/wod-tool.gif?raw=true 'wod')
