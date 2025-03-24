@@ -1,17 +1,10 @@
-![wod-tool-stdio-demo](public/wod-tool.gif?raw=true 'wod-stdio')
-
 # Model-Context-Protocol Tools Collection
 
 **MCP Tools** is a versatile monorepo providing utilities designed to work with the [**Model-Context-Protocol (MCP)**](https://modelcontextprotocol.io/introduction) framework. It offers a modular approach to managing event-driven workflows through different communication channels.
 
 ## Overview
 
-The monorepo consists of multiple packages, each implementing specific transport layers for the MCP framework:
-
-- **<TOOL_NAME>-sse**: Server-Sent Events (SSE) implementation, enabling real-time, unidirectional data streams from server to client.
-- **<TOOL_NAME>-stdio**: Standard Input/Output (stdio) implementation, facilitating synchronous communication via command-line interfaces.
-
-These packages aim to provide seamless integrations with various clients, making the MCP framework more adaptable to different system architectures.
+The monorepo provides a stdio-based transport layer for the MCP framework, primarily designed for integration with the **Cursor IDE**. While optimized for Cursor, these tools may also work with other MCP-compatible clients.
 
 ## Installation
 
